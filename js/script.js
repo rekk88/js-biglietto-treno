@@ -16,7 +16,7 @@ console.log("prezzo : " + prezzo); //visualizzazione prezzo senza sconto
 document.getElementById("prezzo").innerHTML="Prezzo : " + prezzo.toFixed(2) + "€";
 
 if(età < 18){
-    prezzo = prezzo - (prezzo * 0.2); //sconto del 20%
+    prezzo = prezzo - (prezzo * 0.2); //sconto del 20%  prezzo -= prezzo * 0.2 --> forma abbreviata
     document.getElementById("sconto").innerHTML="sconto 20%";
 }
 else if(età > 65){
